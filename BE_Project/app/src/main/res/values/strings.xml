@@ -1,0 +1,61 @@
+<resources>
+
+    <string name="app_name">BE_Project</string>
+
+    <!--    LOGIN ACTIVITY - 1    -->
+    <string name="LoginPageEditTextEmailHint"> E-Mail ID </string>
+    <string name="LoginPageEditTextPasswordHint"> Password </string>
+    <string name="LoginPageButtonLogIn"> Log-in </string>
+    <string name="LoginPageTextViewSignIn"> Not Signed in yet? <u><font color='#3399FF'>Sign Up </font></u> </string>
+
+    <!--    SIGN IN ACTIVITY - 2    -->
+    <string name="SignInPageTextViewTitle"> User Details </string>
+    <string name="SignInPageEditTextUserName"> User Name <font color='#CC0000'> * </font> </string>
+    <string name="SignInPageEditTextMailId"> Mail Id <font color='#CC0000'> * </font></string>
+    <string name="SignInPageEditTextMobileNumber"> Mobile Number </string>
+    <string name="SignInPageEditTextAddress"> Address </string>
+    <string name="SignInPageEditTextSetPassword"> Set Password <font color='#CC0000'> * </font></string>
+    <string name="SignInPageEditTextReenterPassword"> Re-enter Password <font color='#CC0000'> * </font></string>
+    <string name="SignInPageeFABToast"> View SAVE Button by filling fields with <font color='#CC0000'> * </font></string>
+
+    <!--    SHOP DETAILS IN ACTIVITY - 3    -->
+    <string name="ShopDetailsPageTextViewTitle"> Shop Details </string>
+    <string name="ShopDetailsPageEditTextShopName"> Shop Name <font color='#CC0000'> * </font></string>
+    <string name="ShopDetailsPageEditTextShopAddress"> Shop Address <font color='#CC0000'> * </font></string>
+    <string name="ShopDetailsPageEditTextShopTimings"> Shop Timings <font color='#CC0000'> * </font></string>
+    <string name="ShopDetailsPageEditTextShopContactNumber"> Shop Contact Number <font color='#CC0000'> * </font></string>
+    <string name="ShopDetailsPageFABToast"> View SAVE Button by filling fields with <font color='#CC0000'> * </font></string>
+
+    <!--    GARMENTS, SERVICE, PRICE ACTIVITY - 4    -->
+    <string name="GarmentsServicePriceEditTextPrice"> Enter Price </string>
+    <string name="GarmentsServicePriceTextForFAB"> Done </string>
+    <string name="GarmentsServicePriceCheckBox"> I have entered all the data </string>
+    <string name="GarmentsServicePriceButtonSave"> Save </string>
+    <string name="GarmentsServicePriceTextViewDone"> Done </string>
+    <string name="GarmentsServicePriceTextViewAdditionalData"> Add more garments </string>
+    <string name="GarmentsServicePriceGarmentSpinnerPrompt"> -- Select A Garment -- </string>
+    <string name="GarmentsServicePriceServiceSpinnerPrompt"> -- Select A Service -- </string>
+
+    <!--    EXTRA DATA ACTIVITY - 5    -->
+    <string name="ExtraDataEditTextGarmentName"> Garment Name </string>
+    <string name="ExtraDataEditTextService"> Service Offered </string>
+    <string name="ExtraDataEditTextPrice"> Price </string>
+    <string name="ExtraDataTextViewTitle"> Additional Data </string>
+
+    <!--    NAVIGATION DRAWER: MENU ACTIVITY - 6.1    -->
+    <string name="DrawerMenuCustomerListTitle"> View All Customers </string>
+    <string name="DrawerMenuGarmentDetailsTitle"> Update Garment Details </string>
+    <string name="DrawerMenuShopDetailsTitle"> Update Shop Details </string>
+    <string name="DrawerMenuNewCustomerTitle"> Add New Customer </string>
+    <string name="DrawerMenuAppDetailsTitle"> Help </string>
+    <string name="DrawerMenuLogoutTitle"> Logout </string>
+
+    <!--    CUSTOMER DETAILS ACTIVITY - 7    -->
+    <string name="CustomerDetailsEditTextTitle"> Customer Details </string>
+    <string name="CustomerDetailsEditTextName"> Name </string>
+    <string name="CustomerDetailsEditTextMobile"> Mobile Number </string>
+    <string name="CustomerDetailsEditTextAddress"> Address </string>
+    <string name="CustomerDetailsEditTextMail"> Mail Id </string>
+    <string name="CustomerDetailsCheckBoxDone"> I have entered all the data </string>
+
+</resources>

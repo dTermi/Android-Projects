@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GarmentServicePriceDetailsActivity">
+
+    <Spinner
+        android:id="@+id/GarmentServicePriceActivity_Spnr_Garment"
+        style="@android:style/Widget.Holo.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/round_corners"
+        android:elevation="20dp"
+        android:prompt="@string/GarmentsServicePriceGarmentSpinnerPrompt"
+        android:spinnerMode="dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></Spinner>
+
+    <Spinner
+        android:id="@+id/GarmentServicePriceActivity_Spnr_Service"
+        style="@android:style/Widget.Holo.Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/round_corners"
+        android:elevation="20dp"
+        android:prompt="@string/GarmentsServicePriceServiceSpinnerPrompt"
+        android:spinnerMode="dialog"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GarmentServicePriceActivity_Spnr_Garment"></Spinner>
+
+    <EditText
+        android:id="@+id/GarmentServicePriceActivity_et_Price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/round_corners"
+        android:elevation="20dp"
+        android:hint="@string/GarmentsServicePriceEditTextPrice"
+        android:padding="10dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GarmentServicePriceActivity_Spnr_Service"></EditText>
+
+    <Button
+        android:id="@+id/GarmentServicePriceActivity_btn_SaveCurrentData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/round_corners"
+        android:backgroundTint="#000099"
+        android:elevation="20dp"
+        android:padding="10dp"
+        android:text="@string/GarmentsServicePriceButtonSave"
+        android:textColor="#ffffff"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/GarmentServicePriceActivity_et_Price"></Button>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="30dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_GarmentsServicePrice_Done"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="100dp"
+            android:backgroundTint="#0000EE"
+            android:src="@drawable/ic_baseline_check_24"
+            android:visibility="invisible"
+            app:elevation="20dp"
+            app:fabSize="normal"
+            app:pressedTranslationZ="12dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_GarmentsServicePrice_AdditionalData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="170dp"
+            android:backgroundTint="#0000EE"
+            android:src="@drawable/ic_baseline_edit_24"
+            android:visibility="invisible"
+            app:elevation="20dp"
+            app:fabSize="normal"
+            app:pressedTranslationZ="12dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_GarmentsServicePrice_Expand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            android:backgroundTint="#0000EE"
+            android:src="@drawable/arrow_enter"
+            app:elevation="30dp"
+            app:fabSize="auto"
+            app:pressedTranslationZ="12dp"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+    <TextView
+        android:id="@+id/tv_GarmentsServicePrice_Done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="115dp"
+        android:background="@drawable/button_round_corners"
+        android:elevation="20dp"
+        android:padding="10dp"
+        android:text="@string/GarmentsServicePriceTextViewDone"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/tv_GarmentsServicePrice_AdditionalData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="55dp"
+        android:layout_marginBottom="175dp"
+        android:background="@drawable/button_round_corners"
+        android:elevation="20dp"
+        android:padding="10dp"
+        android:text="@string/GarmentsServicePriceTextViewAdditionalData"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"></TextView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

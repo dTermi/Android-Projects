@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/gradient_background"
+    android:scrollbars="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="0,1,2,3"
+            android:background="@drawable/gradient_background">
+
+            <TextView
+                android:id="@+id/tv_cal_tra_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALORIE TRACKER"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="30sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/orbitron">
+            </TextView>
+
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="1dp"
+                android:layout_weight="1">
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text=" Food "
+                    android:textSize="25sp"
+                    android:fontFamily="@font/orbitron"
+                    android:layout_margin="10dp"
+                    android:layout_column="0"
+                    android:textStyle="bold"
+                    android:gravity="center">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Calories "
+                    android:textSize="25sp"
+                    android:fontFamily="@font/orbitron"
+                    android:layout_margin="10dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:textStyle="bold">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Consumed"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/orbitron"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_column="2">
+                </TextView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Total"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/orbitron"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_column="3">
+                </TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="253dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="0"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="Banana(1/2 medium)"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row1_cal"
+                    android:layout_width="192dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="1"
+                    android:layout_margin="1dp"
+                    android:gravity="center"
+                    android:text="55"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row1_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint=" Quantity or 0"
+                    android:layout_margin="1dp"
+                    android:layout_column="2"
+                    android:gravity="center"
+                    android:inputType="number"
+                    android:background="@drawable/tv_round_corners_with_white_background"/>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row1_tot"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_column="3"
+                    android:layout_marginLeft="1dp"
+                    android:gravity="center"
+                    android:hint="Total"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Apple(1 small)"
+                    android:layout_margin="1dp"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row2_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="55"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row2_con"
+                    android:layout_width="wrap_content"
+                    android:inputType="number"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint=" Quantity or 0"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    android:background="@drawable/tv_round_corners_with_white_background">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row2_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Total"
+                    android:layout_margin="1dp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Grapes(15)"
+                    android:layout_margin="1dp"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row3_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="55"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row3_con"
+                    android:layout_width="wrap_content"
+                    android:inputType="number"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint=" Quantity or 0"
+                    android:background="@drawable/tv_round_corners_with_white_background"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row3_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Total"
+                    android:layout_margin="1dp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Orange(1 medium)"
+                    android:layout_margin="1dp"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row4_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="55"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row4_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint=" Quantity or 0"
+                    android:inputType="number"
+                    android:background="@drawable/tv_round_corners_with_white_background"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row4_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Total"
+                    android:layout_margin="1dp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Whole Milk(1 cup)"
+                    android:layout_margin="1dp"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row5_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="150"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row5_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/tv_round_corners_with_white_background"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint=" Quantity or 0"
+                    android:layout_margin="1dp"
+                    android:inputType="number"
+                    android:layout_column="1"
+                    android:gravity="center">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row5_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Total"
+                    android:layout_margin="1dp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Ghee(1 tbsp)"
+                    android:layout_margin="1dp"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row6_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="45"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row6_con"
+                    android:layout_width="wrap_content"
+                    android:inputType="number"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:background="@drawable/tv_round_corners_with_white_background"
+                    android:hint=" Quantity or 0"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row6_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Total"
+                    android:layout_margin="1dp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Chappati(1 medium)"
+                android:layout_margin="1dp"
+                android:layout_column="0"
+                android:gravity="center"
+                />
+
+            <TextView
+                android:id="@+id/tv_table_layout_row7_cal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="80"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:gravity="center"
+                />
+
+            <EditText
+                android:id="@+id/et_table_layout_row7_con"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="number"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:background="@drawable/tv_round_corners_with_white_background"
+                android:hint=" Quantity or 0"
+                android:layout_margin="1dp"
+                android:layout_column="1"
+                android:gravity="center">
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_table_layout_row7_tot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:hint="Total"
+                android:layout_margin="1dp"
+                android:layout_column="3"
+                android:gravity="center"
+                />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Rice cooked(25gms)"
+                    android:layout_margin="1dp"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row8_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="80"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row8_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint=" Quantity or 0"
+                    android:layout_margin="1dp"
+                    android:background="@drawable/tv_round_corners_with_white_background"
+                    android:layout_column="1"
+                    android:inputType="number"
+                    android:gravity="center">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row8_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Total"
+                    android:layout_margin="1dp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Dal(1 large katori)"
+                    android:layout_margin="1dp"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row9_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="80"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row9_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint=" Quantity or 0"
+                    android:background="@drawable/tv_round_corners_with_white_background"
+                    android:layout_margin="1dp"
+                    android:inputType="number"
+                    android:layout_column="1"
+                    android:gravity="center">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row9_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Total"
+                    android:layout_margin="1dp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Egg(1 item)"
+                    android:layout_margin="1dp"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row10_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="75"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row10_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint=" Quantity or 0"
+                    android:background="@drawable/tv_round_corners_with_white_background"
+                    android:layout_margin="1dp"
+                    android:inputType="number"
+                    android:layout_column="1"
+                    android:gravity="center">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row10_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Total"
+                    android:layout_margin="1dp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Fish(50 gms)"
+                    android:layout_margin="1dp"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row11_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="55"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row11_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint=" Quantity or 0"
+                    android:layout_margin="1dp"
+                    android:inputType="number"
+                    android:background="@drawable/tv_round_corners_with_white_background"
+                    android:layout_column="1"
+                    android:gravity="center">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row11_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Total"
+                    android:layout_margin="1dp"
+                    android:layout_column="3"
+                    android:gravity="center"
+                    />
+
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_margin="1dp"
+                android:layout_weight="1"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="Kheer(100gms)"
+                    android:layout_margin="1dp"
+                    android:layout_column="0"
+                    android:gravity="center"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row12_cal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:text="180"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center"
+                    />
+
+                <EditText
+                    android:id="@+id/et_table_layout_row12_con"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:background="@drawable/tv_round_corners_with_white_background"
+                    android:hint=" Quantity or 0"
+                    android:inputType="number"
+                    android:layout_margin="1dp"
+                    android:layout_column="1"
+                    android:gravity="center">
+                </EditText>
+
+                <TextView
+                    android:id="@+id/tv_table_layout_row12_tot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:hint="Total"
+                    android:layout_margin="1dp"
+                    android:layout_column="3"
+                    android:gravity="center" />
+
+            </TableRow>
+
+            <TextView
+                android:id="@+id/tv_cal_tra_ideal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="IDEAL AMOUNT OF CALORIES TO BE CONSUMED EVERY-DAY"
+                android:gravity="left"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_cal_tra_ideal_total_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1200 CALORIES"
+                android:gravity="left"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="552dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron"
+                android:background="@drawable/tv_round_corners_with_white_background">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_cal_tra_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CALORIES CONSUMED"
+                android:gravity="left"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron">
+            </TextView>
+
+
+            <TextView
+                android:id="@+id/tv_cal_tra_total_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="TOTAL"
+                android:gravity="left"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="552dp"
+                android:paddingLeft="10dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron"
+                android:background="@drawable/tv_round_corners_with_white_background">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_cal_tra_total_calc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="calculate"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="550dp"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron"
+                android:background="@drawable/tv_round_corners_with_white_background">
+            </Button>
+
+        </TableLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>

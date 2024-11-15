@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".User_Information">
+
+            <TextView
+                android:id="@+id/tv_tab3_sugar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="30dp"
+                android:text="SUGAR LEVEL"
+                android:textSize="35sp"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/orbitron">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_sugar_fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_tab3_sugar_title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp"
+                android:text="Fasting Sugar"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron">
+            </TextView>
+
+            <EditText
+                android:id="@+id/et_sugar_fasting"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tv_sugar_fasting"
+                android:layout_marginTop="50dp"
+                app:layout_constraintLeft_toRightOf="@id/tv_sugar_fasting"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/tv_round_corners_with_white_background"
+                android:textSize="25sp"
+                android:inputType="number">
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_sugar_after_fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_sugar_fasting"
+                app:layout_constraintLeft_toLeftOf="@id/tv_sugar_fasting"
+                android:layout_marginTop="40dp"
+                android:text="After Fasting"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron">
+            </TextView>
+
+
+            <EditText
+                android:id="@+id/et_sugar_after_fasting"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/tv_sugar_after_fasting"
+                android:layout_marginTop="50dp"
+                app:layout_constraintLeft_toLeftOf="@id/et_sugar_fasting"
+                android:paddingLeft="10dp"
+                android:textColor="#000000"
+                android:background="@drawable/tv_round_corners_with_white_background"
+                android:textSize="25sp"
+                android:inputType="number">
+            </EditText>
+
+            <TextView
+                android:id="@+id/tv_sugar_ideal_fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_sugar_after_fasting"
+                app:layout_constraintLeft_toLeftOf="@id/tv_sugar_fasting"
+                android:layout_marginTop="80dp"
+                android:text="Ideal Fasting"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_ideal_fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_sugar_ideal_fasting"
+                android:textColor="#000000"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_sugar_ideal_fasting"
+                android:layout_marginRight="50dp"
+                android:paddingLeft="10dp"
+                android:text="Below 100 mg/dL"
+                android:paddingRight="10dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/tv_round_corners_with_white_background"
+                android:textSize="25sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_sugar_ideal_after_fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_ideal_fasting"
+                app:layout_constraintLeft_toLeftOf="@id/tv_sugar_fasting"
+                android:layout_marginTop="40dp"
+                android:text="Ideal after Fasting"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_ideal_after_fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_sugar_ideal_after_fasting"
+                android:textColor="#000000"
+                app:layout_constraintLeft_toRightOf="@id/tv_sugar_ideal_after_fasting"
+                android:layout_marginRight="50dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="25dp"
+                android:text="Below 140 mg/dL"
+                android:background="@drawable/tv_round_corners_with_white_background"
+                android:textSize="25sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_sugar_var_fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_sugar_ideal_after_fasting"
+                app:layout_constraintLeft_toLeftOf="@id/tv_sugar_fasting"
+                android:layout_marginTop="80dp"
+                android:text="Variation Fasting"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_var_fasting"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_sugar_var_fasting"
+                android:textColor="#000000"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/tv_sugar_var_fasting"
+                android:layout_marginRight="50dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/tv_round_corners_with_white_background"
+                android:textSize="25sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_sugar_var_after_fasting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_var_fasting"
+                app:layout_constraintLeft_toLeftOf="@id/tv_sugar_fasting"
+                android:layout_marginTop="40dp"
+                android:text="Variation after Fasting"
+                android:textSize="25sp"
+                android:textColor="#000000"
+                android:fontFamily="@font/orbitron">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_var_after_fasting"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                app:layout_constraintBottom_toBottomOf="@+id/tv_sugar_var_after_fasting"
+                android:textColor="#000000"
+                app:layout_constraintLeft_toRightOf="@id/tv_sugar_var_after_fasting"
+                android:layout_marginRight="50dp"
+                android:paddingLeft="10dp"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/tv_round_corners_with_white_background"
+                android:textSize="25sp">
+            </TextView>
+
+            <Button
+                android:id="@+id/btn_tab3_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/tv_sugar_var_after_fasting"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="25dp"
+                android:background="@drawable/rad_btn"
+                android:text="enter"
+                android:textColor="#ffffff">
+            </Button>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </HorizontalScrollView>
+
+</ScrollView>

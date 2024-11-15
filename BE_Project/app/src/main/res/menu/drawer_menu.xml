@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/DrawerMenu_GarmentDetails"
+        android:icon="@drawable/drawer_menu_casual_t_shirt"
+        android:title="@string/DrawerMenuGarmentDetailsTitle"></item>
+
+    <item
+        android:id="@+id/DrawerMenu_ShopDetails"
+        android:icon="@drawable/drawer_menu_storefront"
+        android:title="@string/DrawerMenuShopDetailsTitle"></item>
+
+    <item
+        android:id="@+id/DrawerMenu_AddCustomer"
+        android:icon="@drawable/drawer_menu_customer"
+        android:title="@string/DrawerMenuNewCustomerTitle"></item>
+
+    <item
+        android:id="@+id/DrawerMenu_ListCustomers"
+        android:icon="@drawable/drawer_menu_list_customers"
+        android:title="@string/DrawerMenuCustomerListTitle"></item>
+
+
+    <item
+        android:id="@+id/DrawerMenu_AppDetails"
+        android:icon="@drawable/drawer_menu_help"
+        android:title="@string/DrawerMenuAppDetailsTitle"></item>
+
+    <item
+        android:id="@+id/DrawerMenu_Logout"
+        android:icon="@drawable/drawer_menu_logout"
+        android:title="@string/DrawerMenuLogoutTitle"></item>
+
+</menu>
